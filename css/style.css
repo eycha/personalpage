@@ -34,11 +34,16 @@ a:hover {
 }
 
 .inner {
-  width: 100%; /* 가로 사이즈가 1200px 넘는 해상도에서는 max-width 설정 */
-  height: 100%; /* align-items 등으로 수직 가운데 정렬을 위해, 알맞은 height 설정이 필요함 */
-  margin: 0 auto; /* 가운데 정렬: 동일 요소에 width 가 설정되어 있을 때에만 적용 */
-  padding: 0rem 2rem; /* 좌우 padding 을 살짝 주어서, 좌우에 딱 붙지 않도록 함 */
-  overflow: hidden; /* 넘치는 영역에 대해서는 표시안되도록 작성해야 함 */
+  width: 100%;
+  /* 가로 사이즈가 1200px 넘는 해상도에서는 max-width 설정 */
+  height: 100%;
+  /* align-items 등으로 수직 가운데 정렬을 위해, 알맞은 height 설정이 필요함 */
+  margin: 0 auto;
+  /* 가운데 정렬: 동일 요소에 width 가 설정되어 있을 때에만 적용 */
+  padding: 0rem 2rem;
+  /* 좌우 padding 을 살짝 주어서, 좌우에 딱 붙지 않도록 함 */
+  overflow: hidden;
+  /* 넘치는 영역에 대해서는 표시안되도록 작성해야 함 */
 }
 
 header {
@@ -88,22 +93,27 @@ section {
 }
 
 .main {
-  height: 360px; /* 화면 이미지 고정 */
-  background-image: url("https://www.fun-coding.org/assets_lms/images/photodune-4161018-group-of-students-m.jpg");
+  height: 360px;
+  /* 화면 이미지 고정 */
+  background-image: url("https://phoneky.co.uk/thumbs/wallpapers/p2ls/music/40/69b2545112839236.jpg");
   background-size: cover;
-  background-position: center 10%; /* 이미지 위치를 살짝 위로 올리기 위한 position 설정 */
+  background-position: center 10%;
+  /* 이미지 위치를 살짝 위로 올리기 위한 position 설정 */
   background-repeat: no-repeat;
   z-index: 1;
 }
+
+
 
 /* 배경 이미지에 색상을 어둡게 하기 위해, 어두운 색상으로 이미지 상위에 투명도를 주어 덮어씌움 */
 .main-container {
   width: 100%;
   height: 100%;
-  background-color: rgb(47, 48, 89);
-  opacity: 0.8;
-  z-index: 2;
-  margin-top: 60px; /* position 이 fixed 일 경우, 문서 흐름에서 빠지므로, 이 부분은 margin 으로 적용 */
+  /* background-color: rgb(47, 48, 89); */
+  opacity: 1;
+  z-index: 3;
+  margin-top: 60px;
+  /* position 이 fixed 일 경우, 문서 흐름에서 빠지므로, 이 부분은 margin 으로 적용 */
 }
 
 .title-container {
@@ -246,7 +256,8 @@ section {
   list-style: none;
   padding: 1rem 0;
   margin: 0;
-  overflow: none; /* overflow 를 hidden 으로 설정하면, transform 시 이미지 짤림 */
+  overflow: none;
+  /* overflow 를 hidden 으로 설정하면, transform 시 이미지 짤림 */
 }
 
 .class-card {
@@ -270,6 +281,7 @@ section {
 .class-image {
   /* 사이즈가 큰 이미지를 작은 블럭 내에 넣을 때 호환성을 위해 max-width/max-height 를 사용해야 함 */
   max-width: 240px;
+  max-height: 160px;
 
   /* border-radius: 블럭 모서리를 둥글게 하는 CSS 기능
      top-left | top-right | bottom-right | bottom-left */
@@ -399,12 +411,14 @@ footer {
 
 /* drag 할 수 있는 아이템임을 나타내는 표시를 포인터로 변경함 */
 ul li img:hover {
-  cursor: grab; /* IE11에서는 지원 안함 */
+  cursor: grab;
+  /* IE11에서는 지원 안함 */
 }
 
 /* dragging 중인 상태에서 잡는 표시를 포인터로 변경함 */
 ul li img:active {
-  cursor: grabbing; /* IE11에서는 지원 안함 */
+  cursor: grabbing;
+  /* IE11에서는 지원 안함 */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -417,6 +431,7 @@ ul li img:active {
   .skill-container {
     display: none;
   }
+
   .roadmap-desc {
     display: none;
   }
@@ -426,9 +441,11 @@ ul li img:active {
   .class-skill {
     display: none;
   }
+
   .class-container {
     padding: 0.5rem;
   }
+
   .class-desc {
     margin-top: 0rem;
   }
@@ -441,18 +458,22 @@ ul li img:active {
     color: #fff;
     margin-bottom: 0.8rem;
   }
+
   .message {
     font-size: 1.4rem;
     font-weight: normal;
     color: #fff;
     line-height: 2rem;
   }
+
   .class-skill {
     display: none;
   }
+
   .class-container {
     padding: 0.5rem;
   }
+
   .class-desc {
     margin-top: 0.3rem;
   }
